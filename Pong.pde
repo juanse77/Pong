@@ -1,11 +1,11 @@
 import processing.sound.*;
 import gifAnimation.*;
 
-SoundFile sonido;
+SoundFile rebote;
 SoundFile aplauso;
 SoundFile voladores;
 
-GifMaker ficherogif;
+//GifMaker ficherogif;
 
 boolean up1 = false;
 boolean up2 = false;
@@ -27,6 +27,18 @@ int marcador1 = 0, marcador2 = 0;
 int alto_marcador = 200, pie = 700;
 
 int display_gol = 0;
+
+void Rebote(){
+  rebote.play();
+}
+
+void Aplauso(){
+  aplauso.play();
+}
+
+void Voladores(){
+  voladores.play();
+}
 
 void start_stop(){
    if(started){
@@ -58,7 +70,7 @@ void rebota(float muroPosY){
    vx = v_pelota * cos(angulo);
    vy = -v_pelota * sin(angulo);
    
-   sonido.play(); 
+   thread("Rebote"); 
 }
 
 void desplaza_muros(){
@@ -98,12 +110,14 @@ void setup(){
   fill(128);
   noStroke();
   
-  sonido = new SoundFile(this, "rebote.wav") ;
+  rebote = new SoundFile(this, "rebote.wav") ;
   aplauso = new SoundFile(this, "aplauso.wav");
   voladores = new SoundFile(this, "voladores.wav");
   
+  /*
   ficherogif = new GifMaker( this, "pong.gif");
   ficherogif.setRepeat(0);
+  */
   
   px = width/2;
   py = alto_pantalla/2 + alto_marcador;
@@ -143,7 +157,7 @@ void detecta_colision(){
       rebota(muro1Y);
     }else{
       vy = -vy;
-      sonido.play();
+      thread("Rebote");
     }
   }
   
@@ -168,7 +182,7 @@ void detecta_colision(){
       rebota(muro2Y);
     }else{
       vy = -vy;
-      sonido.play();
+      thread("Rebote");
     }
   }
     
@@ -182,7 +196,7 @@ void detecta_colision(){
       display_gol = 100;  
     
     }else{
-      voladores.play();
+      thread("Voladores");
     }
     
   }
@@ -193,18 +207,18 @@ void detecta_colision(){
     
     if(marcador2 < 5){
       
-      aplauso.play();
+      thread("Aplauso");
       display_gol = 100;
   
     }else{
-      voladores.play();
+      thread("Voladores");
     }
     
   }
   
   if(py > alto_pantalla + alto_marcador - radioPelota || py < alto_marcador + radioPelota + 5){
     vy = -vy;
-    sonido.play();
+    thread("Rebote");
   }
 }
 
@@ -277,12 +291,14 @@ void draw(){
   rect(muro1X, muro1Y, anchoMuro, altoMuro);
   rect(muro2X, muro2Y, anchoMuro, altoMuro);
  
+  /*
   if(contador_frames == 3){
     ficherogif.addFrame();
     contador_frames = 0;
   }else{
     contador_frames ++;
   }
+  */
   
   if(display_gol > 0) return;
   if(marcador1 == 5 || marcador2 == 5){
@@ -303,9 +319,10 @@ void keyReleased() {
   int x = key;
   
   switch(x){
-    case 114:
+    /*case 114:
       ficherogif.finish();
       break;
+    */
       
     case 32:
       start_stop();
