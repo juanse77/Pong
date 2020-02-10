@@ -19,7 +19,7 @@ Concretamente se utilizaron los ficheros:
 velocidad del gif se asemeje a la velocidad real del juego.</p>
 
 <div align="center">
-![Gif Pong](./pong1.gif "Pong")
+	<img src="./pong1.gif" alt="Pong" />
 </div>
 
 <p>De modo adicional se ha eleborado un vídeo en el que se puede ver de forma más realista la ejecución del programa. La reproducción del vídeo no incluye sonido.</p>
