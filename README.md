@@ -18,11 +18,11 @@ Concretamente se utilizaron los ficheros:
 <p>La funcionalidad de generación del gif se ha dejado en el proyecto pero desactivada. Para activarla simplemente hay que descomentar las líneas actualmente comentadas. Se ha decidido hacer así debido a que el proceso de generación del gif ralentiza en exceso la ejecución del juego. Debido a esto último, para la generación del gif he decidido capturar únicamente uno de cada tres fotogramas, de modo que la
 velocidad del gif se asemeje a la velocidad real del juego.</p>
 
-![Gif Pong](./pong1.gif "Pong")
+<center>![Gif Pong](./pong1.gif "Pong")</center>
 
 <p>De modo adicional se ha eleborado un vídeo en el que se puede ver de forma más realista la ejecución del programa. La reproducción del vídeo no incluye sonido.</p>
 
-<a href="./pong.mp4" title="Video Pong"><img src="pong.mp4" alt="Pong" /></a>
+<p><a href="./pong.mp4" title="Video Pong">Enlace al vídeo</a></p>
 
 <p>En el programa se ha reproducido el comportamiento en los rebotes contra los muros del juego original. Es decir, cuando la bola toca el muro por la parte frontal la dirección de salida de la bola dependerá de la posición relativa del choque. Si la bola golpea el muro por la parte central la bola será rebotada de modo horizontal, mientras que si golpea por las partes laterales la bola adquirirá un ángulo proporcional a la distancia del centro del muro.</p>
 
