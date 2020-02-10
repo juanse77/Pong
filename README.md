@@ -7,9 +7,9 @@ También se ha hecho uso de las librerías Sound en su versión 2.2.3, y de la l
 Adicionalmente, se ha añadido al proyecto tres ficheros de sonido wav para los efectoe de rebote de la bola, aplausos tras un gol, y fanfarria final al ganar la partida. Los sonidos se obtuvieron de la página web "https://freewavesamples.com/".
 
 Concretamente se utilizaron los ficheros:
-	rebote -> "https://freewavesamples.com/e-mu-proteus-fx-javanese-c3" - E-Mu-Proteus-FX-Javanese-C3.wav
-	aplauso -> "https://freewavesamples.com/applause" - Applause.wav
-	fanfarria -> "https://freewavesamples.com/yamaha-pss-170-fireworks-c3" - Yamaha-PSS-170-Fireworks-C3.wav
+	- rebote.wav -> "https://freewavesamples.com/e-mu-proteus-fx-javanese-c3" - E-Mu-Proteus-FX-Javanese-C3.wav
+	- aplauso.wav -> "https://freewavesamples.com/applause" - Applause.wav
+	- fanfarria.wav -> "https://freewavesamples.com/yamaha-pss-170-fireworks-c3" - Yamaha-PSS-170-Fireworks-C3.wav
 
 La funcionalidad de generación del gif se ha dejado en el proyecto pero desactivada. Para activarla simplemente hay que descomentar las líneas actualmente comentadas. Se ha decidido hacer así debido a que el proceso de generación del gif ralentiza en exceso la ejecución del juego. Debido a esto último, para la generación del gif he decidido capturar únicamente uno de cada tres fotogramas, de modo que la
 velocidad del gif se asemeje a la velocidad real del juego.
@@ -18,4 +18,4 @@ De modo adicional se ha eleborado un vídeo en el que se puede ver de forma más
 
 En el programa se ha reproducido el comportamiento en los rebotes contra los muros del juego original. Es decir, cuando la bola toca el muro por la parte frontal la dirección de salida de la bola dependerá de la posición relativa del choque. Si la bola golpea el muro por la parte central la bola será rebotada de modo horizontal, mientras que si golpea por las partes laterales la bola adquirirá un ángulo proporcional a la distancia del centro del muro.
 
-Esta aplicación se ha desarrollado como primera práctica evaluable para la asignatura de "Creando Interfaces de Usuarios" de la mención de Computación del grado de Ingeniería Informática de la Universidad de Las Palmas de Gran Canaria en el curso 2019/20 y en fecha de 8/2/2020 por el alumno Juan Sebastián Ramírez Artiles.
+Esta aplicación se ha desarrollado como primera práctica evaluable para la asignatura de "Creando Interfaces de Usuarios" de la mención de Computación del grado de Ingeniería Informática de la Universidad de Las Palmas de Gran Canaria en el curso 2019/20 y en fecha de 10/2/2020 por el alumno Juan Sebastián Ramírez Artiles.

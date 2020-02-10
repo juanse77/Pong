@@ -3,7 +3,7 @@ import gifAnimation.*;
 
 SoundFile rebote;
 SoundFile aplauso;
-SoundFile voladores;
+SoundFile fanfarria;
 
 //GifMaker ficherogif;
 
@@ -36,8 +36,8 @@ void Aplauso(){
   aplauso.play();
 }
 
-void Voladores(){
-  voladores.play();
+void Fanfarria(){
+  fanfarria.play();
 }
 
 void start_stop(){
@@ -112,7 +112,7 @@ void setup(){
   
   rebote = new SoundFile(this, "rebote.wav") ;
   aplauso = new SoundFile(this, "aplauso.wav");
-  voladores = new SoundFile(this, "voladores.wav");
+  fanfarria = new SoundFile(this, "fanfarria.wav");
   
   /*
   ficherogif = new GifMaker( this, "pong.gif");
@@ -196,7 +196,7 @@ void detecta_colision(){
       display_gol = 100;  
     
     }else{
-      thread("Voladores");
+      thread("Fanfarria");
     }
     
   }
@@ -211,7 +211,7 @@ void detecta_colision(){
       display_gol = 100;
   
     }else{
-      thread("Voladores");
+      thread("Fanfarria");
     }
     
   }
