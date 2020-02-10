@@ -25,7 +25,7 @@ velocidad del gif se asemeje a la velocidad real del juego.</p>
 <p>De modo adicional se ha eleborado un vídeo en el que se puede ver de forma más realista la ejecución del programa. La reproducción del vídeo no incluye sonido.</p>
 
 <video controls="controls">
-<source type"video/mp4" src="pong.mp4"></source>
+<source type="video/mp4" src="pong.mp4"></source>
 <p>No se pudo cargar el vídeo</p>
 </video>
 
