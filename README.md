@@ -24,6 +24,8 @@ velocidad del gif se asemeje a la velocidad real del juego.</p>
 
 <p>De modo adicional se ha eleborado un vídeo en el que se puede ver de forma más realista la ejecución del programa. La reproducción del vídeo no incluye sonido.</p>
 
+![](pong.mp4)
+
 <p><a href="./pong.mp4" title="Video Pong">Enlace al vídeo</a></p>
 
 <p>En el programa se ha reproducido el comportamiento en los rebotes contra los muros del juego original. Es decir, cuando la bola toca el muro por la parte frontal la dirección de salida de la bola dependerá de la posición relativa del choque. Si la bola golpea el muro por la parte central la bola será rebotada de modo horizontal, mientras que si golpea por las partes laterales la bola adquirirá un ángulo proporcional a la distancia del centro del muro.</p>
